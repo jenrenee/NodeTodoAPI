@@ -42,7 +42,7 @@ MongoClient.connect(dbURL, (error, db) => {
     db.collection('Users').findOneAndDelete({
         _id: new ObjectID('5a15cecb90f4171874cb60dc')
     }).then((result) => {
-        console.log(result);
+        console.log(result);    
 
     }, (error) => {
         console.log(`FIND ONE AND DELETE FAILED ${error}`);
